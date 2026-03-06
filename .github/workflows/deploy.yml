@@ -30,7 +30,7 @@ jobs:
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/test
       
       - name: Copy file via ssh key
-        uses: appleboy/scp-actions@v1
+        uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.HOST_SERVER }}
           username: ${{ secrets.HOST_USER_NAME }}
